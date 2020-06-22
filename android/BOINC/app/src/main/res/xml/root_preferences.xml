@@ -106,14 +106,13 @@
                 app:key="powerSources"
                 app:title="@string/prefs_power_source_header" />
 
-        <SeekBarPreference
-                android:max="100"
-                app:defaultValue="90"
+        <edu.berkeley.boinc.settings.IncrementalSeekBarPreference
+                android:max="20"
+                app:defaultValue="18"
                 app:dependency="stationaryDeviceMode"
                 app:iconSpaceReserved="false"
                 app:key="minBatteryLevel"
-                app:min="10"
-                app:seekBarIncrement="10"
+                app:min="2"
                 app:showSeekBarValue="true"
                 app:title="@string/battery_charge_min_pct_header" />
 
